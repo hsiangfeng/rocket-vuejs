@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>rocket/Vuejs</title>
+        <link rel="stylesheet" href="./css/all.css">
+    </head>
+
+    <body id="body">
+        <div id="app">
+            <img class="rocket rocket1" src="./img/rocket.png" width="50px">
+            <img class="rocket rocket2" src="./img/rocket.png" width="50px">
+            <img class="rocket rocket3" src="./img/rocket.png" width="50px" >
+            <div class="wrap_data">
+                <div class="rocketDistance-1" v-text="rocketDistance_1"></div>
+                <div class="rocketDistance-2" v-text="rocketDistance_2" ></div>
+                <div class="rocketDistance-3" v-text="rocketDistance_3"></div>
+                <div class="ranking"></div>
+                <button @click="allRocket">全部發射升空</button>
+                <button @click="reRocket">回歸初始</button>
+                <button @click="rocketSetTimeOut">自動發射&回歸(AUTO)</button>
+                <button @click="randomRocket">隨機發射</button>
+                <button @click="autoRandomRocket">隨機發射&回歸(AUTO)</button>
+                <button @click="stopAuto">停止</button>
+                <div class="countdown"></div>
+            </div>
+            
+        </div>
+        <script src="./js/vue.js"></script>
+        <script src="./js/all.js"></script>
+    </body>
+
+</html>
